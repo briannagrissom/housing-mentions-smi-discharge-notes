@@ -5,6 +5,10 @@ notes, using four NLP methods of increasing sophistication — from a regex keyw
 a fine-tuned clinical transformer — applied to a cohort of 3,808 MIMIC-IV admissions for
 serious mental illness (SMI).
 
+<img width="980" height="357" alt="Screenshot 2026-08-10 at 5 45 43 PM" src="https://github.com/user-attachments/assets/9585aa37-2c14-405d-a139-924be0da8f22" />
+
+
+
 ## Research question
 
 > **How consistently is housing actually mentioned in discharge summaries for patients
