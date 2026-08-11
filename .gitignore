@@ -1,0 +1,25 @@
+# Data (PhysioNet credentialed — never commit)
+data/
+*.csv
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Model artifacts
+*.pt
+*.bin
+*.safetensors
+
+# Scratch
+milestone3_copy.ipynb
+milestone4_EDA.ipynb
+stopwords.png
+reports/milestone2.pdf
+reports/milestone3.pdf
