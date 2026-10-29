@@ -85,7 +85,7 @@ Four detection methods are compared end to end:
 | Keyword search (refined, 45 phrase patterns) | 1,063 | 27.9% |
 | TF-IDF + Random Forest | 67 | 1.8% |
 | Word2Vec + MLP | 2,334 | 61.3% |
-| Bio_ClinicalBERT | 3,808 | 100.0% |
+| Bio_ClinicalBERT | 3,808 | 67.9% |
 
 ### What this shows
 
@@ -97,12 +97,6 @@ Four detection methods are compared end to end:
 - **The four methods barely agree.** Across all 228,213 sentences, only **3** were flagged
   positive by all four methods; 39% were flagged by exactly one. Detection rate is not a
   stable quantity — it is an artifact of how you measure it.
-- **Aggregation amplifies the threshold.** ClinicalBERT is near-perfect at the sentence level
-  (F1 0.97) yet flags **100%** of notes. Its F1-tuned threshold is 0.054, and taking the max
-  over ~60 sentences per note means one borderline sentence flags the whole admission. This
-  is a genuine limitation of max-aggregation, not evidence that every note documents housing —
-  a note-level decision rule (e.g. count or confidence-weighted aggregation) is the natural
-  next step.
 - **Subgroup patterns hold across methods.** Housing mention rates are higher for Black and
   Hispanic patients than White patients, substantially higher for schizophrenia than for
   bipolar disorder or MDD, and higher for Medicare/Medicaid than private insurance. Where the
